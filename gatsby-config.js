@@ -4,36 +4,44 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emilia-core/gatsby-config.js
-    siteTitle: `Emilia`,
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
-    siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://emilia.lekoarts.de`,
-    siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
+    siteTitle: `Julia Kosinskaya - Kids illustrator`,
+    siteTitleAlt: `Julia Kosinskaya`,
+    siteHeadline: `Julia Kosinskaya`,
+    siteUrl: `https://kosinskaya.com/`,
+    siteDescription: `Illustrations for kids`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `A friend of Kosinskaja`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        name: `Julia Kosinskaya`,
+        location: `Mykolayiv, Ukraine`,
+        showThemeAuthor: `false`,
+        mdx: true,
+        socialMedia: [
+          {
+            title: `Instagram`,
+            href: `https://www.instagram.com/gardegraphics`
+          }
+        ],
+        sharp: true,
+      },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Emilia - @lekoarts/gatsby-theme-emilia`,
-        short_name: `Emilia`,
-        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
+        short_name: `Julia Kosinskaya`,
+        description: `Illustrations for kids`,
         start_url: `/`,
         background_color: `#fff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#3182ce`,
+        theme_color: `#3182ce`,
         display: `standalone`,
         icons: [
           {
