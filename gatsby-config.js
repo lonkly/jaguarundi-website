@@ -28,6 +28,7 @@ module.exports = {
             href: `https://www.instagram.com/gardegraphics`
           }
         ],
+        sharp: true,
       },
     },
     `gatsby-plugin-sitemap`,
