@@ -4,7 +4,7 @@ import originalTheme from "@lekoarts/gatsby-theme-emilia/src/gatsby-plugin-theme
 
 
 const theme = merge(originalTheme, {
-  initialColorModeName: 'dark',
+  initialColorModeName: 'light',
   colors: {
     text: tailwind.colors.gray[4],
     primary: tailwind.colors.purple[5],
