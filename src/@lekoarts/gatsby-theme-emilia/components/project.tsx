@@ -80,7 +80,7 @@ const Project = ({ data: { project, images }, pageContext: { prev, next } }: Pro
             <GatsbyImage
               image={image.childImageSharp.gatsbyImageData}
               alt={image.name}
-              sx={{ mb: [4, 4, 5], boxShadow: `xl` }}
+              sx={{ mb: [4, 4, 5], boxShadow: `20px 20px 50px grey;` }}
             />
           </animated.div>
         ))}

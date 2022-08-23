@@ -43,12 +43,12 @@ const Footer = () => {
               justifyContent: `space-between`,
             }}
           >
-            <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+           
             <div sx={{ mt: [4, 4, 4, 0] }}>
               <div sx={{ a: { ml: [1, 1, 1, 2], mr: [1, 1, 1, 0] } }}>
                 <SocialMediaList />
               </div>
-              <div sx={{ color: `textMuted` }}>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</div>
+              <div sx={{ color: `textMuted` }}>Copyright Julia Kosinskaja  &copy; {new Date().getFullYear()}. All rights reserved.</div>
             </div>
           </Flex>
         </div>

@@ -54,7 +54,7 @@ const Header = () => {
               height: [`140px`, `140px`],
               width: [`140px`, `140px`],
               display: `inline-block`,
-             
+              boxShadow: ['20px 20px 20px D3D3D3']
             }}
           >
             {avatar?.file?.childImageSharp?.gatsbyImageData ? (
