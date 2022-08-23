@@ -51,10 +51,10 @@ const Header = () => {
             sx={{
               overflow: `hidden`,
               borderRadius: `full`,
-              height: [`100px`, `140px`],
-              width: [`100px`, `140px`],
+              height: [`140px`, `140px`],
+              width: [`140px`, `140px`],
               display: `inline-block`,
-              boxShadow: `lg`,
+            //  boxShadow: `lg`,
               "> div:not([data-placeholder='true'])": {
                 height: [`100px !important`, `140px !important`],
                 width: [`100px !important`, `140px !important`],
