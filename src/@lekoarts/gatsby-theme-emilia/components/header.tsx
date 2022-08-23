@@ -22,7 +22,7 @@ const Header = () => {
     query {
       file(name: { eq: "avatar" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 140, height: 140, quality: 100)
+          gatsbyImageData(layout: FIXED, width: 360, height: 360, quality: 100)
         }
       }
     }
@@ -51,8 +51,8 @@ const Header = () => {
             sx={{
               overflow: `hidden`,
               borderRadius: `full`,
-              height: [`140px`, `140px`],
-              width: [`140px`, `140px`],
+              height: [`360px`, `360px`],
+              width: [`360px`, `360px`],
               display: `inline-block`,
               boxShadow: ['20px 20px 20px D3D3D3']
             }}
