@@ -96,13 +96,15 @@ date: "2022-01-01"
 title: "Emilia"
 defer: false
 slug: "/my-slug"
-areas:
+areas: 
+   - .
   - Neon
   - Lights
 ---
 ```
 
-The frontmatter alone is enough, if you'd like to add additional content you can do so by writing your content (as usual with MDX) below the frontmatter. It'll be displayed in the header of the project below the date and areas.
+The frontmatter alone is enough, if you'd like to add additional content you can do so by writing your content (as usual with MDX) below the frontmatter. It'll be displayed in the header of the project below the date and areas: 
+   - ..
 
 ### Changing the "About Me" text
 

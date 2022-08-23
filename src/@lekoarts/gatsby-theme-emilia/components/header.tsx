@@ -4,7 +4,7 @@ import { animated, useSpring, config } from "react-spring"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image"
 import useEmiliaConfig from "@lekoarts/gatsby-theme-emilia/src/hooks/use-emilia-config"
-import HeaderBackground from "@lekoarts/gatsby-theme-emilia/src/components/header-background"
+//import HeaderBackground from "@lekoarts/gatsby-theme-emilia/src/components/header-background"
 import Location from "@lekoarts/gatsby-theme-emilia/src/assets/location"
 import SocialMediaList from "@lekoarts/gatsby-theme-emilia/src/components/social-media-list"
 
@@ -40,11 +40,11 @@ const Header = () => {
     to: { opacity: 1, transform: `translate3d(0, 0, 0)` },
   })
   const fadeProps = useSpring({ config: config.slow, from: { opacity: 0 }, to: { opacity: 1 } })
-  const fadeLongProps = useSpring({ config: config.slow, delay: 600, from: { opacity: 0 }, to: { opacity: 1 } })
+  const fadeLongProps = useSpring({ config: config.slow, delay: 700, from: { opacity: 0 }, to: { opacity: 1 } })
 
   return (
     <Flex as="header" variant="layout.projectHead">
-      <HeaderBackground />
+     
       <div sx={{ textAlign: `center`, my: 5, zIndex: 10 }}>
         <animated.div style={fadeProps}>
           <div
@@ -54,11 +54,7 @@ const Header = () => {
               height: [`140px`, `140px`],
               width: [`140px`, `140px`],
               display: `inline-block`,
-            //  boxShadow: `lg`,
-              "> div:not([data-placeholder='true'])": {
-                height: [`100px !important`, `140px !important`],
-                width: [`100px !important`, `140px !important`],
-              },
+             
             }}
           >
             {avatar?.file?.childImageSharp?.gatsbyImageData ? (
