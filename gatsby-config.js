@@ -4,14 +4,14 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `Julia Kosinskaya - Kids illustrator`,
+    siteTitle: `Julia Kosinskaya - Children's illustrator`,
     siteTitleAlt: `Julia Kosinskaya`,
     siteHeadline: `Julia Kosinskaya`,
     siteUrl: `https://kosinskaya.com/`,
-    siteDescription: `Illustrations for kids`,
+    siteDescription: `Illustrations for Children`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    author: `A friend of Kosinskaja`,
+    author: `Vivienne Fosh`,
   },
   plugins: [
     {

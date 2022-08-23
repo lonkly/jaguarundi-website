@@ -92,9 +92,9 @@ New projects will be shown on the index page of this theme and can be added by c
 ```md
 ---
 cover: "./sean-foley-0JD7kvxAq0Y-unsplash.jpg"
-date: "2019-09-10"
+date: "2022-01-01"
 title: "Emilia"
-defer: false
+defer: true
 slug: "/my-slug"
 areas:
   - Neon
