@@ -1,4 +1,4 @@
--/** @jsx jsx */
+/** @jsx jsx */
 import { jsx, Container } from "theme-ui"
 import { animated, useSpring, config } from "react-spring"
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image"
@@ -74,7 +74,7 @@ const Project = ({ data: { project, images }, pageContext: { prev, next } }: Pro
         image={project.cover.childImageSharp.resize.src}
       />
       <HeaderProject title={project.title} description={project.body} areas={project.areas} date={project.date} />
-      <Container sx={{ mt: [`-6rem`, `-6rem`, `-8rem`] }}>
+      <Container sx={{ mt: [`-6rem`, `-6rem`, `-18rem`], width: '70%' }}>
         {images.nodes.map((image) => (
           <animated.div key={image.name} style={imageFade}>
             <GatsbyImage
