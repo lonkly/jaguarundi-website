@@ -28,41 +28,6 @@ const Projects = ({ projects }: Props) => {
     to: { opacity: 1, transform: `translate3d(0, 0, 0)` },
   })
 
-  if (projects.length === 0) {
-    return (
-      <Layout>
-        <Header />
-        <Container>
-          <Themed.p>
-            Hi!{` `}
-            <span role="img" aria-label="Wave emoji">
-              👋
-            </span>
-            {` `}
-            <br />
-            Thanks for using <b>@lekoarts/gatsby-theme-emilia</b>. You currently don't have any content in your{` `}
-            <i>projects</i> folder - that's why this page displays a placeholder text. Head over to the{` `}
-            <Themed.a href="https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-emilia">
-              README
-            </Themed.a>
-            {` `}
-            to learn how to setup them.
-          </Themed.p>
-          <Themed.p>
-            <b>TL;DR:</b> <br />
-            The starter automatically created the folder <code>content/projects</code>. Go into this folder, create a
-            new folder called <code>example</code> and create an <code>index.mdx</code> file there and place an image.
-            Edit the frontmatter like described in the{` `}
-            <Themed.a href="https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-emilia">
-              README
-            </Themed.a>
-            .
-          </Themed.p>
-        </Container>
-      </Layout>
-    )
-  }
-
   return (
     <Layout>
       <Header />
@@ -79,10 +44,10 @@ const Projects = ({ projects }: Props) => {
           >
             {projects.map((project, index) => {
               const val = project.cover.childImageSharp.gatsbyImageData.backgroundColor as string
-              const shadow = rgba(val, 0.15)
+              const shadow = rgba('black', 0.15)
 
-              const px = [`20px`, `20px`, `16px`, `8px`, `4px`]
-              const shadowArray = px.map((v) => `${'#D3D3D3'} 0px ${v} ${v} 0px`)
+              const px = [`50px`, `50px`, `16px`, `8px`, `4px`]
+              const shadowArray = px.map((v) => `${shadow} 0px ${v} ${v} 0px`)
 
               return <Card key={project.slug} eager={index === 0} item={project} overlay={val} shadow={shadowArray} />
             })}

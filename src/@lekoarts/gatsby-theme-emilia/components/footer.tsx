@@ -43,7 +43,7 @@ const Footer = () => {
               justifyContent: `space-between`,
             }}
           >
-           
+           <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
             <div sx={{ mt: [4, 4, 4, 0] }}>
               <div sx={{ a: { ml: [1, 1, 1, 2], mr: [1, 1, 1, 0] } }}>
                 <SocialMediaList />
