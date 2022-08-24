@@ -4,10 +4,10 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `Julia Kosinskaya - Children's illustrator`,
-    siteTitleAlt: `Julia Kosinskaya`,
-    siteHeadline: `Julia Kosinskaya`,
-    siteUrl: `https://kosinskaya.com/`,
+    siteTitle: `Julia Kosinskaja - Children's illustrator`,
+    siteTitleAlt: `Julia Kosinskaja`,
+    siteHeadline: `Julia Kosinskaja`,
+    siteUrl: `https://kosinskaja.com/`,
     siteDescription: `Illustrations for Children`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
@@ -18,7 +18,7 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
       options: {
-        name: `Julia Kosinskaya`,
+        name: `Julia Kosinskaja`,
         location: `Mykolayiv, Ukraine`,
         showThemeAuthor: `false`,
         mdx: true,
